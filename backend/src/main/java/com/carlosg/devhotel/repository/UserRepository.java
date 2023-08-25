@@ -1,4 +1,9 @@
 package com.carlosg.devhotel.repository;
 
-public interface UserRepository {
+import com.carlosg.devhotel.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository  extends JpaRepository<User, Long> {
 }

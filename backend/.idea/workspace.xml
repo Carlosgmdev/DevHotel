@@ -5,19 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4883ba13-dc3c-4a38-95bf-7329209f6fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/BedroomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/BedroomService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/model/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/model/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/BedroomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/BedroomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/ReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/BedroomRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/BedroomRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/ReservationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/ReservationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/UserRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,8 +53,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/carlosg/Desktop/Code/ORACLE_ONE_NEXT_EDUCATION/portafolio/DevHotel/backend",
@@ -48,7 +67,16 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "2e3d7a3e299173501bfa897a96e3e57c",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -83,6 +111,7 @@
       <updated>1692921919620</updated>
       <workItem from="1692921921111" duration="28000" />
       <workItem from="1692922441977" duration="1293000" />
+      <workItem from="1692923770754" duration="6271000" />
     </task>
     <servers />
   </component>
