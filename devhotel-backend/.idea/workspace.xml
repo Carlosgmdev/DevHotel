@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4883ba13-dc3c-4a38-95bf-7329209f6fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedrooms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedrooms.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/routes/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/routes/Layout.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="4883ba13-dc3c-4a38-95bf-7329209f6fd1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +98,7 @@
       <workItem from="1692922441977" duration="1293000" />
       <workItem from="1692923770754" duration="6727000" />
       <workItem from="1692937036028" duration="2715000" />
-      <workItem from="1692994790474" duration="1256000" />
+      <workItem from="1692994790474" duration="1875000" />
     </task>
     <servers />
   </component>
