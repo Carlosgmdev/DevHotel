@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4883ba13-dc3c-4a38-95bf-7329209f6fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/postcss.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/postcss.config.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedrooms.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedrooms.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/routes/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/routes/Layout.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,7 @@
       <workItem from="1692922441977" duration="1293000" />
       <workItem from="1692923770754" duration="6727000" />
       <workItem from="1692937036028" duration="2715000" />
-      <workItem from="1692994790474" duration="397000" />
+      <workItem from="1692994790474" duration="1256000" />
     </task>
     <servers />
   </component>

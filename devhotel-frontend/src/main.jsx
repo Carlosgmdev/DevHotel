@@ -7,6 +7,7 @@ import {
 import './index.css'
 import Layout from './routes/Layout';
 import Bedrooms from './components/Bedrooms';
+import Reservations from './components/Reservations';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/reservations",
-    element: <h1>reservations</h1>
+    element: <Layout><Reservations/></Layout>
   },
   {
     path: "/signup",
