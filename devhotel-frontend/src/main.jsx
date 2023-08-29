@@ -5,26 +5,28 @@ import {
   RouterProvider
 } from "react-router-dom";
 import './index.css'
-import Layout from './routes/Layout';
+import Dashboard from './components/Dashboard';
 import Bedrooms from './components/Bedrooms';
 import Reservations from './components/Reservations';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>
+    element: <Login/>
   },
   {
     path: "/bedrooms",
-    element: <Layout><Bedrooms/></Layout>
+    element: <Dashboard><Bedrooms/></Dashboard>
   },
   {
     path: "/reservations",
-    element: <Layout><Reservations/></Layout>
+    element: <Dashboard><Reservations/></Dashboard>
   },
   {
     path: "/signup",
-    element: <div>Signup</div>
+    element: <Signup/>
   }
 ])
 

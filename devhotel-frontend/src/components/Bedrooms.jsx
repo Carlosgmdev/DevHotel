@@ -21,7 +21,7 @@ const Bedrooms = () => {
       <h2 className="text-2xl font-semibold mb-4">Bedrooms</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {bedrooms.map( bedroom => (
-            <Bedroom bedroom={bedroom}/>
+            <Bedroom bedroom={bedroom} key={bedroom.id}/>
         ))}
       </div>
     </div>

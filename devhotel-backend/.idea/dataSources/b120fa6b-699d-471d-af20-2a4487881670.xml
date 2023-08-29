@@ -2,7 +2,6 @@
 <dataSource name="devhotel@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
     <root id="1">
-      <DefaultCasing>mixed/mixed</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <ServerVersion>8.0.33</ServerVersion>
@@ -20,7 +19,7 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="10" parent="2" name="reservation">
+    <table id="10" parent="2" name="reservations">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
@@ -29,7 +28,7 @@
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="12" parent="9" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>21</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -70,70 +69,80 @@
       <DasType>date|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="21" parent="10" name="reservedat">
-      <DasType>date|0s</DasType>
+    <column id="21" parent="10" name="nights">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="22" parent="10" name="bedroom_id">
-      <DasType>bigint|0s</DasType>
+    <column id="22" parent="10" name="reservedat">
+      <DasType>date|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="23" parent="10" name="user_id">
-      <DasType>bigint|0s</DasType>
+    <column id="23" parent="10" name="total">
+      <DasType>double|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <foreign-key id="24" parent="10" name="FKtexyd2xd3a68s0q9k9h47k9uv">
+    <column id="24" parent="10" name="bedroom_id">
+      <DasType>bigint|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="25" parent="10" name="user_id">
+      <DasType>bigint|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="26" parent="10" name="FK7fd8hemcxd13oaoaj74rliw9g">
       <ColNames>bedroom_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>bedrooms</RefTableName>
     </foreign-key>
-    <foreign-key id="25" parent="10" name="FKrea93581tgkq61mdl13hehami">
+    <foreign-key id="27" parent="10" name="FKb5g9io5h54iwl2inkno50ppln">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <index id="26" parent="10" name="PRIMARY">
+    <index id="28" parent="10" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="27" parent="10" name="FKtexyd2xd3a68s0q9k9h47k9uv">
+    <index id="29" parent="10" name="FK7fd8hemcxd13oaoaj74rliw9g">
       <ColNames>bedroom_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="28" parent="10" name="FKrea93581tgkq61mdl13hehami">
+    <index id="30" parent="10" name="FKb5g9io5h54iwl2inkno50ppln">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="29" parent="10" name="PRIMARY">
+    <key id="31" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="30" parent="11" name="id">
-      <AutoIncrement>2</AutoIncrement>
+    <column id="32" parent="11" name="id">
+      <AutoIncrement>3</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="31" parent="11" name="email">
+    <column id="33" parent="11" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="32" parent="11" name="name">
+    <column id="34" parent="11" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="33" parent="11" name="password">
+    <column id="35" parent="11" name="password">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="34" parent="11" name="PRIMARY">
+    <index id="36" parent="11" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="35" parent="11" name="PRIMARY">
+    <key id="37" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

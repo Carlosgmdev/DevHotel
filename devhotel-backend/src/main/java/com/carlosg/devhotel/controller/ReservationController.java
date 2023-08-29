@@ -22,4 +22,9 @@ public class ReservationController {
     public Reservation createReservation(@RequestBody Reservation reservation) {
         return reservationService.createReservation(reservation);
     }
+
+    @DeleteMapping("/{id}")
+    public void cancelReservation(@PathVariable Long id) {
+        reservationService.cancelReservation(id);
+    }
 }

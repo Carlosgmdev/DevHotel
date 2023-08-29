@@ -7,13 +7,17 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name="reservations")
 public class Reservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private LocalDate reservedat;
     private LocalDate checkin;
     private LocalDate checkout;
+    private  int nights;
+    private double total;
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
@@ -27,6 +31,14 @@ public class Reservation {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public LocalDate getReservedat() {
+        return reservedat;
+    }
+
+    public void setReservedat(LocalDate reservedat) {
+        this.reservedat = reservedat;
     }
 
     public LocalDate getCheckin() {
@@ -43,6 +55,22 @@ public class Reservation {
 
     public void setCheckout(LocalDate checkout) {
         this.checkout = checkout;
+    }
+
+    public int getNights() {
+        return nights;
+    }
+
+    public void setNights(int nights) {
+        this.nights = nights;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 
     public User getUser() {
