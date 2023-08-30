@@ -1,4 +1,4 @@
-#DevHotel
+# DevHotel
 
 ## Descripción
 
@@ -17,8 +17,18 @@ Con la aplicación DevHotel, los usuarios pueden:
 - Backend: Spring Boot (Java)![Spring Boot](https://img.icons8.com/color/48/000000/spring-logo.png) 
 - Base de Datos: MySQL ![MySQL](https://img.icons8.com/color/48/000000/mysql-logo.png) 
 - Estilos: Tailwind CSS ![Tailwind CSS](https://img.icons8.com/color/48/000000/tailwindcss.png) 
-- Rutas: React Router ![React Router](https://img.icons8.com/color/48/000000/react-router.png) 
+- Rutas: React Router ![React Router](https://img.icons8.com/color/48/000000/react-native.png) 
 - Comunicación con API: Fetch API ![Fetch API](https://img.icons8.com/plasticine/48/000000/api.png) 
+
+## Capturas de Pantalla
+
+Aquí tienes algunas capturas de pantalla de la aplicación:
+
+1. ![Captura 1](https://i.imgur.com/uRdLuIy.png)
+2. ![Captura 2](https://i.imgur.com/ScBkdQJ.png)
+3. ![Captura 3](https://i.imgur.com/OPVCyEH.png)
+4. ![Captura 4](https://i.imgur.com/KVL2lct.png)
+5. ![Captura 5](https://i.imgur.com/hjNeELH.png)
 
 ## Instalación
 
