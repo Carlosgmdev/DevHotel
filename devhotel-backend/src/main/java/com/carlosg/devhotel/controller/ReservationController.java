@@ -18,6 +18,11 @@ public class ReservationController {
         return  reservationService.getReservations();
     }
 
+    @GetMapping("/user/{id}")
+    public List<Reservation> getReservationsByUserId(@PathVariable Long id) {
+        return reservationService.findByUserId(id);
+    }
+
     @PostMapping
     public Reservation createReservation(@RequestBody Reservation reservation) {
         return reservationService.createReservation(reservation);

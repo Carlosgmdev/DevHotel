@@ -4,13 +4,14 @@ import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 
-export const Modal = ({bedroom, onClose}) => {
+export const Modal = ({bedroom, onClose, user}) => {
 
   const [ checkin, setCheckin] = useState("");
   const [ checkout, setCheckout] = useState("");
-  const {id, name, price} = bedroom;
+  const {id: bedroomId, name, price} = bedroom;
   const [nights, setNights] = useState(0);
   const [total, setTotal] = useState(0);
+  const {id: userId} = user;
 
   useEffect(() => {
     if(checkin && checkout) {
@@ -27,10 +28,10 @@ export const Modal = ({bedroom, onClose}) => {
       checkin: checkin,
       checkout: checkout,
       bedroom: {
-        id: id
+        id: bedroomId
       },
       user: {
-        id: 1
+        id: userId
       } 
     }
   
@@ -85,8 +86,6 @@ export const Modal = ({bedroom, onClose}) => {
             <label htmlFor="checkin">Checkin</label>
             <input
               type="date"
-              name="checkin"
-              id="checkin"
               onChange={e => setCheckin(e.target.value)}
             />
           </div>
@@ -94,8 +93,6 @@ export const Modal = ({bedroom, onClose}) => {
             <label htmlFor="checkin">Checkout</label>
             <input
               type="date"
-              name="checkout"
-              id="checkout"
               onChange={e => setCheckout(e.target.value)}
             />
           </div>

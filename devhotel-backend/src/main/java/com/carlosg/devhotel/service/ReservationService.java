@@ -6,7 +6,6 @@ import com.carlosg.devhotel.repository.BedroomRepository;
 import com.carlosg.devhotel.repository.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -43,5 +42,9 @@ public class ReservationService {
         Reservation reservation = reservationRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Reservation not found with id: " + id));
         reservationRepository.delete(reservation);
+    }
+
+    public List<Reservation> findByUserId(Long id) {
+        return reservationRepository.findByUserId(id);
     }
 }

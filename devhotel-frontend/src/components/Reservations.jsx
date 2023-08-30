@@ -3,11 +3,12 @@ import { formatDate } from '../js/utilities';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
-const Reservations = () => {
+const Reservations = ({user}) => {
   const [reservations, setReservations] = useState([]);
+  const {id} = user;
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/reservations')
+    fetch(`http://localhost:8080/api/reservations/user/${id}`)
       .then(response => response.json())
       .then(data => {
         setReservations(data);
@@ -50,7 +51,7 @@ const Reservations = () => {
   
 
   return (
-    <div className="bg-gray-100 p-8">
+    <div className="bg-gray-100 p-6">
       <h2 className="text-2xl font-semibold mb-4">Reservations</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white">

@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4883ba13-dc3c-4a38-95bf-7329209f6fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b120fa6b-699d-471d-af20-2a4487881670.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b120fa6b-699d-471d-af20-2a4487881670.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/LoginDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/ReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/carlosg/devhotel/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/controller/ReservationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/controller/ReservationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/carlosg/devhotel/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/assets/img/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Bedroom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/components/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/components/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../devhotel-frontend/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +48,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -105,7 +133,9 @@
       <workItem from="1692923770754" duration="6727000" />
       <workItem from="1692937036028" duration="2715000" />
       <workItem from="1692994790474" duration="2039000" />
-      <workItem from="1693310929003" duration="10576000" />
+      <workItem from="1693310929003" duration="11186000" />
+      <workItem from="1693345291715" duration="607000" />
+      <workItem from="1693360932054" duration="6566000" />
     </task>
     <servers />
   </component>

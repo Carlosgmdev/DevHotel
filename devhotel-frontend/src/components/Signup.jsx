@@ -1,18 +1,53 @@
 // Signup.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
 const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleSignup = () => {
-    // Agregar lógica de registro
+  const handleSignup = (e) => {
+    e.preventDefault()
+    fetch('http://localhost:8080/api/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        password
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        Swal.fire({
+          title: "Success",
+          text: "Registration successful, please login.",
+          icon: 'success'
+        }).then(() => {
+          navigate('/');
+        });
+      } else {
+        throw new Error("Registration failed");
+      }
+    })
+    .catch(error => {
+      Swal.fire({
+        title: "Error",
+        text: "An error occurred during registration.",
+        icon: 'error'
+      });
+    });
   };
+  
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen bg-slate-100">
       <div className="bg-white p-8 shadow-md rounded-md">
       <h1 className='text-center text-3xl mb-5 font-medium'>DevHotel</h1>
         <h2 className="text-2xl font-semibold mb-4">Signup</h2>
@@ -46,7 +81,7 @@ const Signup = () => {
           </div>
           <button
             className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700"
-            onClick={handleSignup}
+            onClick={e => handleSignup(e)}
           >
             Signup
           </button>

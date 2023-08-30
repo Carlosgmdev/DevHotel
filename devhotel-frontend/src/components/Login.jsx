@@ -1,17 +1,55 @@
 // Login.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
-const Login = () => {
+const Login = ({ setIsAuthenticated, setUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Agregar lógica de inicio de sesión
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+  
+    fetch('http://localhost:8080/api/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Invalid credentials");
+        }
+      })
+      .then(data => {
+        setIsAuthenticated(true);
+        setUser(data);
+        localStorage.setItem('user', JSON.stringify(data));
+        localStorage.setItem('isAuthenticated', true);
+        navigate('/dashboard/bedrooms');
+      })
+      .catch(error => {
+        Swal.fire({
+          title: "Error",
+          text: error.message,
+          icon: 'error'
+        });
+      });
   };
+  
+
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen bg-slate-100">
       <div className="bg-white p-8 shadow-md rounded-md">
         <h1 className='text-center text-3xl mb-5 font-medium'>DevHotel</h1>
         <h2 className="text-2xl font-semibold mb-4">Login</h2>
@@ -36,7 +74,7 @@ const Login = () => {
           </div>
           <button
             className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700"
-            onClick={handleLogin}
+            onClick={e => handleLogin(e)}
           >
             Login
           </button>

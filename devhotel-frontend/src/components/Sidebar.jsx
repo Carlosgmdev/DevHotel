@@ -13,9 +13,9 @@ const Sidebar = () => {
         <ul>
           <li className="mb-4">
             <Link
-              to="/bedrooms"
+              to="/dashboard/bedrooms"
               className={`${
-                location.pathname === '/bedrooms'
+                location.pathname === '/dashboard/bedrooms'
                   ? 'bg-white text-purple-600'
                   : 'text-white'
               } hover:text-purple-300 transition duration-300 block rounded-lg py-2 px-4`}
@@ -25,9 +25,9 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              to="/reservations"
+              to="/dashboard/reservations"
               className={`${
-                location.pathname === '/reservations'
+                location.pathname === '/dashboard/reservations'
                   ? 'bg-white text-purple-600'
                   : 'text-white'
               } hover:text-purple-300 transition duration-300 block rounded-lg py-2 px-4`}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Modal } from "./Modal";
 
-export const Bedroom = ({ bedroom }) => {
+export const Bedroom = ({ bedroom, user }) => {
 
   const [showModal, setShowModal] = useState(false);
   const { id, name, description, price } = bedroom;
@@ -15,7 +15,7 @@ export const Bedroom = ({ bedroom }) => {
       className="bg-white rounded-lg shadow-md overflow-hidden"
     >
       <img
-        src={`src/assets/img/${id}.jpg`}
+        src={`/src/assets/img/${id}.webp`}
         alt={"Image of bedroom"}
         className="w-full h-32 object-cover mb-4"
       />
@@ -31,7 +31,7 @@ export const Bedroom = ({ bedroom }) => {
       </button>
       </div>
       {showModal && (
-        <Modal bedroom={bedroom} onClose={closeModal}/>
+        <Modal bedroom={bedroom} onClose={closeModal} user={user}/>
       )}
     </div>
 
