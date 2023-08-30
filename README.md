@@ -2,9 +2,9 @@
 
 ## Descripción
 
-La aplicación DevHotel Reservations es una plataforma de gestión de reservaciones especialmente diseñada para desarrolladores. DevHotel es un hotel único que ofrece a los desarrolladores un espacio donde pueden combinar trabajo y descanso, brindando una experiencia excepcional para aquellos que buscan un entorno inspirador para sus proyectos y momentos de relajación.
+La aplicación DevHotel es una plataforma de gestión de reservaciones especialmente diseñada para desarrolladores. DevHotel es un hotel único que ofrece a los desarrolladores un espacio donde pueden combinar trabajo y descanso, brindando una experiencia excepcional para aquellos que buscan un entorno inspirador para sus proyectos y momentos de relajación.
 
-Con la aplicación DevHotel Reservations, los usuarios pueden:
+Con la aplicación DevHotel, los usuarios pueden:
 
 - Iniciar sesión y registrarse para acceder a sus cuentas.
 - Explorar y reservar habitaciones para sus estadías en el hotel.
@@ -13,12 +13,12 @@ Con la aplicación DevHotel Reservations, los usuarios pueden:
 
 ## Stack
 
-- Frontend: ![React](https://img.icons8.com/color/48/000000/react-native.png) React
-- Backend: ![Spring Boot](https://img.icons8.com/color/48/000000/spring-logo.png) Spring Boot (Java)
-- Base de Datos: ![MySQL](https://img.icons8.com/color/48/000000/mysql-logo.png) MySQL
-- Estilos: ![Tailwind CSS](https://img.icons8.com/color/48/000000/tailwindcss.png) Tailwind CSS
-- Rutas: ![React Router](https://img.icons8.com/color/48/000000/react-router.png) React Router
-- Comunicación con API: ![Fetch API](https://img.icons8.com/plasticine/48/000000/api.png) Fetch API
+- Frontend: React ![React](https://img.icons8.com/color/48/000000/react-native.png) 
+- Backend: Spring Boot (Java)![Spring Boot](https://img.icons8.com/color/48/000000/spring-logo.png) 
+- Base de Datos: MySQL ![MySQL](https://img.icons8.com/color/48/000000/mysql-logo.png) 
+- Estilos: Tailwind CSS ![Tailwind CSS](https://img.icons8.com/color/48/000000/tailwindcss.png) 
+- Rutas: React Router ![React Router](https://img.icons8.com/color/48/000000/react-router.png) 
+- Comunicación con API: Fetch API ![Fetch API](https://img.icons8.com/plasticine/48/000000/api.png) 
 
 ## Instalación
 
