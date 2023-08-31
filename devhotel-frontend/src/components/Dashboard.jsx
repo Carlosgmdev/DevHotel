@@ -24,7 +24,7 @@ const Dashboard = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
       <Sidebar />
       <main className="flex-1 p-4 bg-gray-100 overflow-y-scroll">
         <div className='bg-white w-auto rounded-xl h-14 p-3 flex justify-between items-center shadow-md mb-2'>
-          <h1 className='italic text-purple-800'>{`¡Welcome ${name}!`}</h1>
+          <h1 className='italic font-bold'>{`¡Welcome ${name}!`}</h1>
           <button className='bg-red-600 text-white py-1 px-2 rounded-md'
             onClick={e => handleLogout(e)}
           >
