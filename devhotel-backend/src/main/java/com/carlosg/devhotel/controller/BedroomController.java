@@ -18,12 +18,14 @@ public class BedroomController {
         return bedroomService.getBedrooms();
     }
 
+/*
+
     @PostMapping
     public Bedroom createBedroom(@RequestBody Bedroom bedroom) {
         return bedroomService.createBedroom(bedroom);
     }
 
-/*
+
     @PostMapping
     public List<Bedroom> createBedroom(@RequestBody List<Bedroom> bedrooms) {
         return bedroomService.createBedrooms(bedrooms);
